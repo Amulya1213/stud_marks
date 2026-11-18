@@ -5,6 +5,14 @@ m2 = int(input("Enter marks in Subject 2: "))
 m3 = int(input("Enter marks in Subject 3: "))
 
 total = m1 + m2 + m3
+average = total / 3
+
+if average >= 35:
+    status = "Pass"
+else:
+    status = "Fail"
 
 print("\nStudent Name:", name)
 print("Total Marks:", total)
+print("Average Marks:", average)
+print("Status:", status)
